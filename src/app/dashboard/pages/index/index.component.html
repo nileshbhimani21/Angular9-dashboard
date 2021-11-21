@@ -1,0 +1,186 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group mr-2">
+            <button class="btn btn-sm btn-outline-primary">Share</button>
+            <button class="btn btn-sm btn-outline-primary">Export</button>
+          </div>
+          <button class="btn btn-sm btn-outline-primary dropdown-toggle">
+            <i class="fa fa-calendar"></i>
+            This week
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Earnings (Monthly)</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+            </div>
+            <div class="col-auto">
+              <i class="fas fa-calendar fa-2x text-gray-300"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-left-success shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Earnings (Annual)</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+            </div>
+            <div class="col-auto">
+              <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-left-info shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks</div>
+              <div class="row no-gutters align-items-center">
+                <div class="col-auto">
+                  <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                </div>
+                <div class="col">
+                  <div class="progress progress-sm mr-2">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pending Requests Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-left-warning shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Pending Requests</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+            </div>
+            <div class="col-auto">
+              <i class="fas fa-comments fa-2x text-gray-300"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content Row -->
+  <div class="row pt-3 pb-5">
+    <div class="col-lg-4">
+      <div class="card shadow">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <canvas id="linechart"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card shadow">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <canvas id="barchart"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card shadow">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <canvas id="piechart"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="row mt-5">
+        <div class="col-lg-4">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <circle-progress [percent]="85" [radius]="100" [outerStrokeWidth]="10" [innerStrokeWidth]="4" [space]="-7"
+                [unitsFontSize]="20" [responsive]="true" [outerStrokeColor]="'#4e73df'" [innerStrokeColor]="'#e7e8ea'"
+                [animation]="true" [showSubtitle]="false" [animationDuration]="300" [clockwise]="false">
+              </circle-progress>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <circle-progress [percent]="85" [radius]="100" [outerStrokeWidth]="10" [innerStrokeWidth]="10"
+                [space]="-10" [responsive]="true" [outerStrokeColor]="'#4e73df'" [innerStrokeColor]="'#ffffff'"
+                [animation]="true" [animationDuration]="300" [imageSrc]=img [imageHeight]="180" [imageWidth]="180"
+                [showImage]="true" [showBackground]="false"></circle-progress>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <circle-progress [percent]="85" [radius]="100" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
+                [outerStrokeColor]="'#78C000'" [innerStrokeColor]="'#C7E596'" [animation]="true"
+                [animationDuration]="300" [responsive]="true"></circle-progress>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-12 mt-5">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2>Section title</h2>
+          <div class="">
+            <table id="dataTable" class="table table-hover nowrap w-100">
+              <thead>
+                <tr>
+                  <th>First name</th>
+                  <th>Last name</th>
+                  <th>Position</th>
+                  <th>Office</th>
+                  <th>Age</th>
+                  <th>Start date</th>
+                  <th>Salary</th>
+                  <th>Extn.</th>
+                  <th>E-mail</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

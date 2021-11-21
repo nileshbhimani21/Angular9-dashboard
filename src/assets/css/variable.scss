@@ -1,0 +1,34 @@
+$font_family: 'Roboto', sans-serif;
+$color_text: #464646;
+$color_dark: #0F0F0F;
+$color_blue:#4e73df;
+$color_green:#60B246;
+$color_yellow:#FDDC3D;
+$color_white:#ffffff;
+$color_light_blue:#F4F7F9;
+$color_red:#EC4A4A;
+$color_gray:#EDF0F4;
+$color_gray2:#6e707e;
+
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+@mixin border-radius($property) {
+    -webkit-border-radius: $property;
+    -ms-border-radius: $property;
+    border-radius: $property;
+}
+
+@mixin box-shadow($property) {
+    -webkit-box-shadow: $property;
+    -ms-box-shadow: $property;
+    box-shadow: $property;
+}
+
+//   @include transform(rotate(30deg));
+//   @include border-radius(10px);
+//   @include box-shadow(0 0 6px rgba(0,0,0,0.16))
